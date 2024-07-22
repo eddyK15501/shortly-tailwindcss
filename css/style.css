@@ -588,8 +588,20 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.left-7 {
+  left: 1.75rem;
 }
 
 .mx-auto {
@@ -779,6 +791,11 @@ video {
   line-height: 1;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -789,6 +806,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-cyan {
