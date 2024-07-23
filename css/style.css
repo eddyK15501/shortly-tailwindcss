@@ -815,6 +815,10 @@ video {
   background-image: url('/images/bg-shorten-desktop.svg');
 }
 
+.bg-\[url\(\'\/images\/bg-boost-desktop\.svg\'\)\] {
+  background-image: url('/images/bg-boost-desktop.svg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -971,10 +975,6 @@ video {
   color: rgb(234 179 8 / var(--tw-placeholder-opacity));
 }
 
-#link-form {
-  background-image:
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1071,8 +1071,18 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
