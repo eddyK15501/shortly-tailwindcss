@@ -996,6 +996,10 @@ video {
   color: rgb(234 179 8 / var(--tw-placeholder-opacity));
 }
 
+.s-icon:hover {
+  filter: invert(32%) sepia(49%) saturate(364%) hue-rotate(130deg) brightness(69%) contrast(50%);
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }

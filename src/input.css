@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.s-icon:hover {
+    filter: invert(32%) sepia(49%) saturate(364%) hue-rotate(130deg) brightness(69%) contrast(50%);
+}
