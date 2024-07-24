@@ -2,6 +2,9 @@ const form = document.getElementById('link-form');
 const input = document.getElementById('link-input');
 const errorMsg = document.getElementById('error-msg');
 
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
 const validateURL = (url) => {
   const urlRegex =
     /^(?:(?:https?|ftp):\/\/)?(?:(?:[a-zA-Z0-9_\-\.]+\.)+[a-zA-Z]{2,}|localhost|(?:[0-9]{1,3}\.){3}[0-9]{1,3})(?::\d+)?(?:\/(?:[^\s\/#\?]{0,255}(?:\/[^\s\/#\?]{0,255})*)*)?(?:\?[^\s+&@#/%=]*=[^\s+&@#/%=]*(?:&[^\s+&@#/%=]*=[^\s+&@#/%=]*)*)?(?:#[^\s+]*?)?$/;
@@ -23,4 +26,11 @@ const formSubmit = (event) => {
   }
 };
 
+const toggleNav = () => {
+  btn.classList.toggle('open');
+  menu.classList.toggle('flex');
+  menu.classList.toggle('hidden');
+}
+
 form.addEventListener('submit', formSubmit);
+btn.addEventListener('click', toggleNav);
